@@ -21,8 +21,8 @@ const App = () => {
   },[])
 
   return (
-    <div className="App">
-      <h1 className="Header">React Wars</h1>
+    <div className='App'>
+      <h1 className='Header'>React Wars</h1>
       {people.map((people, index) => (
         <Cards 
           key={index}

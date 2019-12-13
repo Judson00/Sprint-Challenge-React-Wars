@@ -1,15 +1,19 @@
-import React from "react"
+import React from 'react';
+import { Card, CardHeader, CardBody,
+  CardTitle } from 'reactstrap';
 
 const Cards = props => {
   console.log(props);
-  return(
-    <div className='main-card'>
-      <div className='card-container'>
-        <h1 className='name'>Name: {props.name}</h1>
-        <h2>Birthday: {props.birth_year}</h2>
-      </div>
+  return (
+    <div>
+      <Card>
+        <CardHeader>Name: {props.name}</CardHeader>
+        <CardBody>
+          <CardTitle>Birthday: {props.birth_year}</CardTitle>
+        </CardBody>
+      </Card>
     </div>
   );
-}
+  }
 
 export default Cards;
