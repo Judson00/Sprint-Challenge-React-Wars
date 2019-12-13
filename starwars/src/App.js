@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import axios from 'axios';
 import Cards from './components/Cards';
+import styled from 'styled-components';
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -20,8 +21,14 @@ const App = () => {
     .catch(error => console.log({error}));
   },[])
 
+  const StyledDiv=styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  `
+
   return (
-    <div className='App'>
+    <StyledDiv className='App'>
       <h1 className='Header'>React Wars</h1>
       {people.map((people, index) => (
         <Cards 
@@ -30,7 +37,7 @@ const App = () => {
           birth_year={people.birth_year}
         />
       ))}
-    </div>
+    </StyledDiv>
   );
 }
 
