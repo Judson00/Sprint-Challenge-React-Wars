@@ -19,6 +19,12 @@ const Cards = props => {
         <CardHeader>Name: {props.name}</CardHeader>
         <CardBody>
           <CardTitle>Birthday: {props.birth_year}</CardTitle>
+          <CardTitle>Gender: {props.gender}</CardTitle>
+          <CardTitle>Height: {props.height}</CardTitle>
+          <CardTitle>Mass: {props.mass}</CardTitle>
+          <CardTitle>Hair Color: {props.hair_color}</CardTitle>
+          <CardTitle>Skin Color: {props.skin_color}</CardTitle>
+          <CardTitle>Eye Color: {props.eye_color}</CardTitle>
         </CardBody>
       </Card>
     </StyledDiv>

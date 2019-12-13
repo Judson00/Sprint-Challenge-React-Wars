@@ -35,6 +35,12 @@ const App = () => {
           key={index}
           name={people.name}
           birth_year={people.birth_year}
+          gender={people.gender}
+          height={people.height}
+          mass={people.mass}
+          hair_color={people.hair_color}
+          skin_color={people.skin_color}
+          eye_color={people.eye_color}
         />
       ))}
     </StyledDiv>
