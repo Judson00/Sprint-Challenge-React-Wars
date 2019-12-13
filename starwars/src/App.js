@@ -30,17 +30,10 @@ const App = () => {
   return (
     <StyledDiv className='App'>
       <h1 className='Header'>React Wars</h1>
-      {people.map((people, index) => (
+      {people.map((person, index) => (
         <Cards 
           key={index}
-          name={people.name}
-          birth_year={people.birth_year}
-          gender={people.gender}
-          height={people.height}
-          mass={people.mass}
-          hair_color={people.hair_color}
-          skin_color={people.skin_color}
-          eye_color={people.eye_color}
+          person = {person}
         />
       ))}
     </StyledDiv>

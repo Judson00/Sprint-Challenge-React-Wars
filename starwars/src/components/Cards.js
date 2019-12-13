@@ -11,20 +11,21 @@ const StyledDiv = styled.div`
 `
 
 
-const Cards = props => {
+const Cards = props  => {
   console.log(props);
+  const { name, birth_year, gender, height, mass, hair_color, skin_color, eye_color } = props.person;
   return (
     <StyledDiv>
       <Card>
-        <CardHeader>Name: {props.name}</CardHeader>
+        <CardHeader>Name: {name}</CardHeader>
         <CardBody>
-          <CardTitle>Birthday: {props.birth_year}</CardTitle>
-          <CardTitle>Gender: {props.gender}</CardTitle>
-          <CardTitle>Height: {props.height}</CardTitle>
-          <CardTitle>Mass: {props.mass}</CardTitle>
-          <CardTitle>Hair Color: {props.hair_color}</CardTitle>
-          <CardTitle>Skin Color: {props.skin_color}</CardTitle>
-          <CardTitle>Eye Color: {props.eye_color}</CardTitle>
+          <CardTitle>Birthday: {birth_year}</CardTitle>
+          <CardTitle>Gender: {gender}</CardTitle>
+          <CardTitle>Height: {height}</CardTitle>
+          <CardTitle>Mass: {mass}</CardTitle>
+          <CardTitle>Hair Color: {hair_color}</CardTitle>
+          <CardTitle>Skin Color: {skin_color}</CardTitle>
+          <CardTitle>Eye Color: {eye_color}</CardTitle>
         </CardBody>
       </Card>
     </StyledDiv>
