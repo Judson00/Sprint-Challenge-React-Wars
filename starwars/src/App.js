@@ -35,13 +35,13 @@ const App = () => {
   return (
     <StyledDiv className='App'>
       <h1 className='Header'>React Wars</h1>
-      <Page next={nextUrl} previous={prevUrl} url={setUrl} />
       {people.map((person, index) => (
         <Cards 
           key={index}
           person = {person}
         />
       ))}
+      <Page next={nextUrl} previous={prevUrl} url={setUrl} />
     </StyledDiv>
   );
 }
